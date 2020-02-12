@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity"
+    android:orientation="vertical"
+    android:background="@drawable/redback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imgprofile"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Marcus Whitington"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1,856"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Barcelona, Spain"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Posts"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:id="@+id/profile"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbg1"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_multiply"
+                    android:id="@+id/fab1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <TextView
+                                android:layout_weight="1.1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="685"
+                                android:textColor="#111"
+                                android:textSize="15dp"
+                                android:textAlignment="textStart"
+                                android:textStyle="bold"
+                                android:gravity="start" />
+                            <TextView
+                                android:layout_weight="1.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="15,695"
+                                android:textColor="#111"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:textAlignment="textStart"
+                                android:gravity="start" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="Barcelona, Spain"
+                                android:textColor="#111"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:textAlignment="textEnd"
+                                android:gravity="end" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <TextView
+                                android:layout_weight="1.1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Followers"
+                                android:textColor="#111"
+                                android:textSize="15dp"
+                                android:textStyle="normal"
+                                android:textAlignment="textStart"
+                                android:gravity="start" />
+                            <TextView
+                                android:layout_weight="1.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Likes"
+                                android:textColor="#111"
+                                android:textSize="15dp"
+                                android:textStyle="normal"
+                                android:textAlignment="textStart"
+                                android:gravity="start" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:text="Creative Photographer"
+                                android:textColor="#111"
+                                android:textStyle="normal"
+                                android:textSize="15dp"
+                                android:textAlignment="textEnd"
+                                android:gravity="end" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#7A111111"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Posts"
+                            android:textAlignment="textStart"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:textColor="#111"
+                            android:textSize="15dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/recyclerview"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="25dp"
+            android:visibility="visible"
+            android:id="@+id/cardview"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_msg_1"
+                    android:paddingRight="30dp"
+                    android:id="@+id/msg"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_plus1"
+                    android:id="@+id/fab"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_follow"
+                    android:paddingLeft="30dp"
+                    android:id="@+id/follow"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_margin="20dp"
+        android:onClick="back"/>
+
+</FrameLayout>

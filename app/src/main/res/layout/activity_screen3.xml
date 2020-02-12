@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Screen3"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabview"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab_layout_backround"
+                app:tabBackground="@drawable/tab_layout_seletor"
+                app:tabSelectedTextColor="#FFF"
+                app:tabIndicatorHeight="0dp"
+                app:tabRippleColor="@null"
+                android:layout_gravity="center"
+                >
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_settings"
+                android:layout_gravity="end|center"
+                android:layout_marginRight="15dp"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/back"
+                android:layout_gravity="start|center"
+                android:layout_margin="15dp"
+                android:onClick="back"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
+</LinearLayout>

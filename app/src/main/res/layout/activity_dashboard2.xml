@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/recyclerview"
+                    android:layout_weight="1"
+                    android:padding="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:gravity="bottom"
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:id="@+id/profile"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundbg"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            android:layout_gravity="center"
+                            android:id="@+id/down"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="This is for Notification"
+                            android:textColor="#FFF"
+                            android:textSize="15dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.leinardi.android.speeddial.SpeedDialView
+                android:id="@+id/speedDial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:sdMainFabClosedSrc="@drawable/ic_dots_menu"
+                app:layout_behavior="@string/speeddial_scrolling_view_snackbar_behavior"
+                app:sdExpansionMode="left"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bottombg1"
+                app:sdMainFabClosedBackgroundColor="@color/colorPrimary"
+                app:sdMainFabAnimationRotateAngle="90"
+                />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

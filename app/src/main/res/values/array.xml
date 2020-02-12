@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="countries">
+        <item>india</item>
+        <item>india</item>
+        <item>india</item>
+        <item>india</item>
+        <item>india</item>
+    </array>
+
+    <array name="colors">
+        <item>#9C27B0</item>
+        <item>#3F51B5</item>
+        <item>#4CAF50</item>
+        <item>#FFEB3B</item>
+        <item>#FF5722</item>
+    </array>
+
+    <array name="images">
+        <item>@drawable/p1</item>
+        <item>@drawable/p2</item>
+        <item>@drawable/p3</item>
+        <item>@drawable/p4</item>
+        <item>@drawable/p5</item>
+    </array>
+</resources>

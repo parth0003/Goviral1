@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Goviral</string>
+
+    <item name="fab_action1" type="id" />
+    <item name="fab_action2" type="id" />
+    <item name="fab_action3" type="id" />
+    <item name="fab_action4" type="id" />
+    <item name="fab_action5" type="id" />
+
+    <string name="tab_text_1">Speed Dial</string>
+    <string name="tab_text_2">Recents</string>
+    <string name="tab_text_3">Contacts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
